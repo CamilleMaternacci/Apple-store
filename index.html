@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="iSeller Sklep Internetowy, Autoryzowany Serwis Apple, iPhone, Apple Watch, iPad, Macbook">
+    <meta name="keywords"
+        content="apple, sklep internetowy, online, autoryzowany sklep, z produktami apple, apple premium reseller, autoryzowany sprzedawca apple">
+    <link rel="icon" type="image/x-icon" href="./img/apple-icon.svg">
+    <title>iSeller - Sklep internetowy - Apple Reseller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/78eebef08c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="top-nav">
+            <div class="logo">
+                <button class="logo-btn"><a href="index.html"><i class="fa-brands fa-apple"></i> iSeller</a></button>
+            </div>
+            <button class="input"><input type="text" id="input-search" placeholder="Jakiego produktu szukasz?"> <i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="basket-logo"><i class="fa-solid fa-basket-shopping"></i><p class="basket-quantity"></p></button>
+            <div class="basket-area">
+                <button class="close-basket"><i class="fa-solid fa-xmark"></i></button>
+                <div class="top-basket">
+                    <p class="basket-title">Twój koszyk</p>
+                    <p class="title-price">Wartość koszyka:<span class="total-price"></span></p>
+                    <p class="basket-empty-info">Koszyk jest pusty</p>
+                </div>
+                <div class="middle-basket">
+                    <ul class="product-list">
+                    </ul>
+                </div>
+                <div class="bottom-basket">
+                    <button class="delete-all-btn">Wyczyść</button>
+                    <button class="btn-cash">Do kasy</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div class="categories">
+                <div class="category mac">
+                    <a href="#mac-section"><button class="mac-category"><i class="fa-solid fa-laptop"></i>
+                            Mac</button></a>
+                </div>
+                <div class="category iphone">
+                    <a href="#iphone-section"><button class="iphone-category"><i
+                                class="fa-solid fa-mobile-screen-button"></i> iPhone</button></a>
+                </div>
+                <div class="category ipad">
+                    <a href="#ipad-section"><button class="ipad-category"><i
+                                class="fa-solid fa-tablet-screen-button"></i> iPad</button></a>
+                </div>
+                <div class="category music">
+                    <a href="#music-section"><button class="music-category"><i class="fa-solid fa-headphones"></i>
+                            Muzyka</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section mac-section" id="mac-section">
+            <h2>Mac</h2>
+            <div class="products-box products-box-mac">
+            </div>
+        </section>
+        <section class="section iphone-section" id="iphone-section">
+            <h2>iPhone</h2>
+            <div class="products-box products-box-iphone">
+            </div>
+        </section>
+        <section class="section ipad-section" id="ipad-section">
+            <h2>iPad</h2>
+            <div class="products-box products-box-ipad">
+            </div>
+        </section>
+        <section class="section music-section" id="music-section">
+            <h2>Muzyka</h2>
+            <div class="products-box products-box-music">
+        </section>
+        <section class="section search-section" id="search-section">
+            <h2>Szukaj</h2>
+            <div class="products-box products-box-search">
+            </div>
+            <p class="empty-search">Nie znaleziono szukanego produktu...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; iSeller <span class="year"></span></p>
+    </footer>
+
+
+    <script src="./js/products.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
